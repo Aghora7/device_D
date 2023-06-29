@@ -15,8 +15,8 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common LineageOS Stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_viva
+PRODUCT_NAME := lineage_fleur
 PRODUCT_DEVICE := viva
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 11 Pro (4G)
+PRODUCT_MODEL := Redmi Note 11s (4G)

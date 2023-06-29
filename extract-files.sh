@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=viva
+DEVICE=fleur
 VENDOR=xiaomi
 export PATCHELF_VERSION="0_17_2"
 export EU_ENABLE_BINARY_CHECKS="true" # Enabled shared_libs, symbols and soname checks

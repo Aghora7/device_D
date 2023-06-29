@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifeq ($(TARGET_DEVICE),viva)
+ifeq ($(TARGET_DEVICE),fleur)
 include $(call all-makefiles-under,$(call my-dir))
 include $(CLEAR_VARS)
 

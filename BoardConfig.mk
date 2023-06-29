@@ -6,8 +6,8 @@
 #
 
 # Helpful vars
-DEVICE_PATH := device/xiaomi/viva
-KERNEL_PATH := device/xiaomi/viva-kernel
+DEVICE_PATH := device/xiaomi/fleur
+KERNEL_PATH := device/xiaomi/fleur-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Architecture flags
@@ -26,10 +26,10 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # OTA Asserts
-TARGET_OTA_ASSERT_DEVICE := viva,vida
+TARGET_OTA_ASSERT_DEVICE := fleur,miel,viva
 
 # Platform / Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := viva
+TARGET_BOOTLOADER_BOARD_NAME := fleur
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6781
 BOARD_VENDOR := xiaomi
@@ -70,7 +70,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := nothing_important_here
-TARGET_KERNEL_SOURCE := kernel/xiaomi/viva-headers
+TARGET_KERNEL_SOURCE := kernel/xiaomi/fleur-headers
 
 BOARD_VENDOR_KERNEL_MODULES := \
     $(foreach module,$(wildcard $(KERNEL_PATH)/modules/*.ko), \
@@ -166,7 +166,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # VNDK
 BOARD_VNDK_VERSION := current
 
-include vendor/xiaomi/viva/BoardConfigVendor.mk
+include vendor/xiaomi/fleur/BoardConfigVendor.mk
 
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X

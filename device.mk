@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-VENDOR_PATH := vendor/xiaomi/viva/proprietary
+VENDOR_PATH := vendor/xiaomi/fleur/proprietary
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -487,4 +487,4 @@ PRODUCT_SOONG_NAMESPACES += \
 include $(LOCAL_PATH)/configs/props/vendor_log_tags.mk
 
 # Inherit our proprietary vendor
-$(call inherit-product, vendor/xiaomi/viva/viva-vendor.mk)
+$(call inherit-product, vendor/xiaomi/fleur/fleur-vendor.mk)
